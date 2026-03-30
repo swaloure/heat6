@@ -8,6 +8,8 @@ const _inter = Inter({
   variable: "--font-inter",
 })
 
+import { getAssetPath } from '@/lib/utils'
+
 export const metadata: Metadata = {
   title: 'Heat Energy Capital | Industrial Supply',
   description: 'Reliable supplier of industrial chemicals, metals, alloys, and equipment for mining, metallurgical, and processing industries.',
@@ -15,19 +17,19 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: getAssetPath('/icon-light-32x32.png'),
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: getAssetPath('/icon-dark-32x32.png'),
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: getAssetPath('/icon.svg'),
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: getAssetPath('/apple-icon.png'),
   },
 }
 

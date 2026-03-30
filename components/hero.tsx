@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { useTranslation } from "@/lib/i18n"
+import { getAssetPath } from "@/lib/utils"
 
 export function Hero() {
   const { t } = useTranslation()
@@ -11,7 +12,7 @@ export function Hero() {
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img
-          src="/images/hero-bg.jpg"
+          src={getAssetPath("/images/hero-bg.jpg")}
           alt=""
           className="h-full w-full object-cover"
           aria-hidden="true"
