@@ -3,8 +3,8 @@ self.__BUILD_MANIFEST = {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/heat6//_next/:path+",
-        "destination": "/heat6/_next/:path+"
+        "source": "/heat6//next_assets/:path+",
+        "destination": "/heat6/next_assets/:path+"
       }
     ],
     "fallback": []
